@@ -1,4 +1,2 @@
-# ono-tebe-nado-fd
-
-## Ссылка на репозиторий:
-https://github.com/Rustam-Aiztzhanov/ono-tebe-nado-fd
+#Проект практикума ono tebe nado
+>>>>>>> 065358a58ba436ef1fe559954ea2adae89ab12b7
