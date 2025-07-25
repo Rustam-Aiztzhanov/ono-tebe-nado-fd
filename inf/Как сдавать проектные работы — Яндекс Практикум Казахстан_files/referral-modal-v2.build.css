@@ -1,0 +1,836 @@
+.prisma-button2__icon {
+    display: inline-flex;
+    align-items: center;
+    height: 1.5rem;
+    justify-content: center;
+}
+
+.prisma-button2__sublabel {
+    margin: 0;
+}
+
+.prisma-button2 {
+    background: none;
+    border: none;
+    position: relative;
+    transition-property: background-color, border-color, box-shadow, color, transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.prisma-button2:disabled {
+    cursor: default;
+    pointer-events: none;
+}
+
+.prisma-button2:active {
+    transform: scale(0.96);
+}
+
+.prisma-button2__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.prisma-button2_cover-parent {
+    position: static;
+}
+
+.prisma-button2_cover-parent:focus {
+    outline: none;
+}
+
+.prisma-button2_cover-parent:active {
+    transform: none;
+}
+
+.prisma-button2_cover-parent::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1;
+
+    cursor: pointer;
+}
+
+.prisma-button2_cover-parent:focus-visible::before {
+    outline: 2px solid var(--color-content-primary);
+}
+
+.prisma-button2_hidden.prisma-button2_hidden {
+    padding: 0;
+    border: none;
+
+    font-size: 0;
+}
+
+/* для того, чтобы аутлайн отображался только при событиях клавиатуры https://react-spectrum.adobe.com/react-aria/useFocusVisible.html */
+.prisma-button2_no-outline {
+    outline: none;
+}
+
+.prisma-button2_view_clear {
+    color: var(--color-content-primary);
+}
+
+.prisma-button2_view_clear:hover {
+    background-color: var(--color-background-glassy-a);
+}
+
+.prisma-button2_view_clear:active {
+    background-color: var(--color-background-glassy-b);
+}
+
+.prisma-button2_view_clear:disabled {
+    color: var(--color-content-tertiary);
+}
+
+.prisma-button2_view_clear:disabled.prisma-button2_process {
+    background-color: var(--color-background-glassy-b);
+    color: var(--color-content-primary);
+}
+
+.prisma-button2_view_clear .prisma-button2__sublabel {
+    color: var(--color-content-secondary);
+}
+
+.prisma-button2_view_ghost {
+    border-color: var(--color-accent-neutral);
+    color: var(--color-content-primary);
+    border: 1px solid;
+}
+
+.prisma-button2_view_ghost:hover {
+    border-color: var(--color-background-glassy-c);
+    color: var(--color-content-secondary);
+}
+
+.prisma-button2_view_ghost:hover .prisma-button2__sublabel {
+    color: var(--color-content-secondary);
+}
+
+.prisma-button2_view_ghost:active {
+    border-color: var(--color-content-tertiary);
+    color: var(--color-content-tertiary);
+}
+
+.prisma-button2_view_ghost .prisma-button2__sublabel {
+    color: var(--color-content-secondary);
+}
+
+.prisma-button2_view_ghost:disabled {
+    border-color: var(--color-background-glassy-a);
+    color: var(--color-content-tertiary);
+}
+
+.prisma-button2_view_ghost.prisma-button2_process {
+    border-color: var(--color-content-secondary);
+    color: var(--color-content-secondary);
+}
+
+/* для L */
+
+.prisma-button2_view_ghost.prisma-button2_size_l {
+    padding-block: 1.1875rem;
+    padding-inline: 1.4375rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_l.prisma-button2_with-icon {
+    padding: 1.0625rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_l.prisma-button2_with-icon-start,
+.prisma-button2_view_ghost.prisma-button2_size_l.prisma-button2_with-icon-end {
+    padding-block: 1.0625rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_l.prisma-button2_with-sublabel {
+    padding-block: 0.6875rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_l.prisma-button2_with-icon-start {
+    padding-inline: 1.1875rem 1.4375rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_l.prisma-button2_with-icon-end {
+    padding-inline: 1.4375rem 1.1875rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_l.prisma-button2_with-icon-end.prisma-button2_size_l.prisma-button2_with-icon-start {
+    padding-inline: 1.1875rem;
+}
+
+/* для M */
+
+.prisma-button2_view_ghost.prisma-button2_size_m {
+    padding-block: 0.875rem;
+    padding-inline: 1.4375rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_m.prisma-button2_with-icon,
+.prisma-button2_view_ghost.prisma-button2_size_m.prisma-button2_with-icon-end,
+.prisma-button2_view_ghost.prisma-button2_size_m.prisma-button2_with-icon-start {
+    padding: 0.75rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_m.prisma-button2_with-sublabel {
+    padding-block-start: 0.375rem;
+    padding-block-end: 0.4375rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_m.prisma-button2_with-icon-start {
+    padding-inline: 1.1875rem 1.4375rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_m.prisma-button2_with-icon-end {
+    padding-inline: 1.4375rem 1.1875rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_m.prisma-button2_with-icon-end.prisma-button2_size_m.prisma-button2_with-icon-start {
+    padding-inline: 1.1875rem;
+}
+
+/* для S */
+
+.prisma-button2_view_ghost.prisma-button2_size_s {
+    padding-inline: 0.9375rem;
+    padding-block: 0.5rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_s.prisma-button2_with-icon {
+    padding: 0.3125rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_s.prisma-button2_with-icon-start {
+    padding-inline-start: 0.6875rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_s.prisma-button2_with-icon-end {
+    padding-inline-end: 0.6875rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_s.prisma-button2_with-icon-start,
+.prisma-button2_view_ghost.prisma-button2_size_s.prisma-button2_with-icon-end {
+    padding-block: 0.3125rem;
+}
+
+/* для XS */
+
+.prisma-button2_view_ghost.prisma-button2_size_xs {
+    padding-inline: 0.9375rem;
+    padding-block: 0.375rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_xs.prisma-button2_with-icon {
+    padding: 0.1875rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_xs.prisma-button2_with-icon-start {
+    padding-inline-start: 0.6875rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_xs.prisma-button2_with-icon-end {
+    padding-inline-end: 0.6875rem;
+}
+
+.prisma-button2_view_ghost.prisma-button2_size_xs.prisma-button2_with-icon-start,
+.prisma-button2_view_ghost.prisma-button2_size_xs.prisma-button2_with-icon-end {
+    padding-block: 0.1875rem;
+}
+
+.prisma-button2_view_primary {
+    background-color: var(--color-accent-neutral);
+    color: var(--color-content-inverted-primary);
+}
+
+.prisma-button2_view_primary:hover {
+    background-color: var(--color-accent-neutral-hover);
+}
+
+.prisma-button2_view_primary:active {
+    background-color: var(--color-accent-neutral-hover);
+}
+
+.prisma-button2_view_primary:disabled {
+    background-color: var(--color-background-glassy-a);
+    color: var(--color-content-tertiary);
+}
+
+.prisma-button2_view_primary:disabled.prisma-button2_process {
+    background-color: var(--color-accent-neutral-hover);
+    color: var(--color-content-inverted-primary);
+}
+
+.prisma-button2_view_primary:disabled .prisma-button2__sublabel {
+    color: var(--color-content-tertiary);
+}
+
+.prisma-button2_view_primary .prisma-button2__sublabel {
+    color: var(--color-content-inverted-secondary);
+}
+
+.prisma-button2_view_secondary {
+    background-color: var(--color-background-glassy-a);
+    color: var(--color-content-primary);
+}
+
+.prisma-button2_view_secondary:hover {
+    background-color: var(--color-background-glassy-b);
+}
+
+.prisma-button2_view_secondary:active {
+    background-color: var(--color-background-glassy-c);
+}
+
+.prisma-button2_view_secondary:disabled {
+    background-color: var(--color-background-glassy-a);
+    color: var(--color-content-tertiary);
+}
+
+.prisma-button2_view_secondary:disabled.prisma-button2_process {
+    background-color: var(--color-background-glassy-b);
+    color: var(--color-content-primary);
+}
+
+.prisma-button2_view_secondary .prisma-button2__sublabel {
+    color: var(--color-content-secondary);
+}
+
+.prisma-button2_view_raised {
+    color: var(--color-content-primary);
+    background-color: var(--color-background-default);
+    box-shadow: var(--shadow-small-default);
+}
+
+.prisma-button2_view_raised:hover {
+    box-shadow: var(--shadow-small-hovered);
+}
+
+.prisma-button2_view_raised:active {
+    box-shadow: var(--shadow-small-pressed);
+}
+
+.prisma-button2_view_raised:disabled {
+    background-color: var(--color-background-glassy-a);
+    color: var(--color-content-tertiary);
+    box-shadow: var(--shadow-small-hidden);
+}
+
+.prisma-button2_view_raised:disabled.prisma-button2_process {
+    color: var(--color-content-primary);
+    background-color: var(--color-background-default);
+    box-shadow: var(--shadow-small-hovered);
+}
+
+.prisma-button2_view_raised .prisma-button2__sublabel {
+    color: var(--color-content-secondary);
+}
+
+.prisma-button2_size_l {
+    font: var(--font-ys-body-16-regular-ui);
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    padding-block: 1.25rem;
+    padding-inline: 1.5rem;
+    border-radius: var(--border-radius-8);
+    gap: var(--spacing-8);
+}
+
+.prisma-button2_size_l .prisma-button2__sublabel {
+    font: var(--font-ys-caption-12-regular);
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.prisma-button2_size_l.prisma-button2_with-icon {
+    padding: 1.125rem;
+}
+
+.prisma-button2_size_l.prisma-button2_with-icon-start,
+.prisma-button2_size_l.prisma-button2_with-icon-end {
+    padding-block: 1.125rem;
+}
+
+.prisma-button2_size_l.prisma-button2_with-sublabel {
+    padding-block: 0.75rem;
+}
+
+.prisma-button2_size_l.prisma-button2_with-icon-start {
+    padding-inline: 1.25rem 1.5rem;
+}
+
+.prisma-button2_size_l.prisma-button2_with-icon-end {
+    padding-inline: 1.5rem 1.25rem;
+}
+
+.prisma-button2_size_l.prisma-button2_with-icon-end.prisma-button2_size_l.prisma-button2_with-icon-start {
+    padding-inline: 1.25rem;
+}
+
+.prisma-button2_size_m {
+    font: var(--font-ys-body-16-regular-ui);
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    padding-block: 0.9375rem;
+    padding-inline: 1.5rem;
+    border-radius: var(--border-radius-6);
+    gap: var(--spacing-8);
+}
+
+.prisma-button2_size_m .prisma-button2__sublabel {
+    font: var(--font-ys-caption-12-regular);
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.prisma-button2_size_m.prisma-button2_with-icon,
+.prisma-button2_size_m.prisma-button2_with-icon-end,
+.prisma-button2_size_m.prisma-button2_with-icon-start {
+    padding: 0.8125rem;
+}
+
+.prisma-button2_size_m.prisma-button2_with-sublabel {
+    padding-block-start: 0.4375rem;
+    padding-block-end: 0.5rem;
+}
+
+.prisma-button2_size_m.prisma-button2_with-icon-start {
+    padding-inline: 1.25rem 1.5rem;
+}
+
+.prisma-button2_size_m.prisma-button2_with-icon-end {
+    padding-inline: 1.5rem 1.25rem;
+}
+
+.prisma-button2_size_m.prisma-button2_with-icon-end.prisma-button2_size_m.prisma-button2_with-icon-start {
+    padding-inline: 1.25rem;
+}
+
+.prisma-button2_size_xs {
+    font: var(--font-ys-caption-14-regular);
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    padding-inline: 1rem;
+    padding-block: 0.4375rem;
+    border-radius: var(--border-radius-4);
+    gap: var(--spacing-4);
+}
+
+.prisma-button2_size_xs.prisma-button2_with-icon {
+    padding: 0.25rem;
+}
+
+.prisma-button2_size_xs.prisma-button2_with-icon-start {
+    padding-inline-start: 0.75rem;
+}
+
+.prisma-button2_size_xs.prisma-button2_with-icon-end {
+    padding-inline-end: 0.75rem;
+}
+
+.prisma-button2_size_xs.prisma-button2_with-icon-start,
+.prisma-button2_size_xs.prisma-button2_with-icon-end {
+    padding-block: 0.25rem;
+}
+
+.prisma-button2_size_s {
+    font: var(--font-ys-caption-14-regular);
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    padding-inline: 1rem;
+    padding-block: 0.5625rem;
+    border-radius: var(--border-radius-5);
+    gap: var(--spacing-4);
+}
+
+.prisma-button2_size_s.prisma-button2_with-icon {
+    padding: 0.375rem;
+}
+
+.prisma-button2_size_s.prisma-button2_with-icon-start {
+    padding-inline-start: 0.75rem;
+}
+
+.prisma-button2_size_s.prisma-button2_with-icon-end {
+    padding-inline-end: 0.75rem;
+}
+
+.prisma-button2_size_s.prisma-button2_with-icon-start,
+.prisma-button2_size_s.prisma-button2_with-icon-end {
+    padding-block: 0.375rem;
+}
+
+.prisma-button2_with-icon .prisma-button2__icon {
+    width: 1.5rem;
+}
+
+.prisma-button2_progress {
+    pointer-events: none;
+}
+
+.prisma-button2_progress .prisma-button2__content,
+.prisma-button2_progress .prisma-button2__icon {
+    visibility: hidden;
+}
+
+.prisma-button2__progress-dot {
+    position: relative;
+    width: 0.375rem;
+    height: 0.375rem;
+    border-radius: 100%;
+    background-color: currentColor;
+    color: currentColor;
+    animation: dotFlicker 1.5s ease-in infinite;
+    display: block;
+    animation-delay: 0.4s;
+}
+
+.prisma-button2__progress-dot::before,
+.prisma-button2__progress-dot::after {
+    content: ' ';
+    display: inline-block;
+    position: absolute;
+    background-color: currentColor;
+    border-radius: 100%;
+    top: 0;
+    width: 0.375rem;
+    height: 0.375rem;
+    animation: dotFlicker 1.5s ease-in infinite;
+    color: currentColor;
+}
+
+.prisma-button2__progress-dot::before {
+    right: 0.625rem;
+    animation-delay: 0s;
+}
+
+.prisma-button2__progress-dot::after {
+    left: 0.625rem;
+    animation-delay: 0.6s;
+}
+
+@keyframes dotFlicker {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.prisma-button2__progress-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.prisma-modal__content {
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    max-height: 100dvh;
+    overflow-y: auto;
+    position: relative;
+    scrollbar-width: thin;
+}
+
+    .prisma-modal__content::-webkit-scrollbar {
+        height: var(--border-radius-12);
+        width: var(--border-radius-12);
+    }
+
+    .prisma-modal__content::-webkit-scrollbar-thumb {
+        background-clip: content-box;
+        background-color: var(--color-background-glassy-b);
+        border-color: transparent;
+        border-radius: var(--border-radius-12);
+        border-style: solid;
+        border-width: var(--border-radius-4);
+        -webkit-transition: background-color 0.3s;
+        transition: background-color 0.3s;
+    }
+
+    .prisma-modal__content::-webkit-scrollbar-track {
+        background-color: transparent;
+        border: 0;
+    }
+
+    .prisma-modal__content::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    @media (pointer: fine) {
+        .prisma-modal__content:not(.prisma-modal__content:hover)::-webkit-scrollbar-thumb {
+            background-color: transparent;
+        }
+    }
+
+.prisma-modal__content_fullscreen {
+    height: calc(100% - 2 * var(--modal-margin));
+    width: calc(100% - 2 * var(--modal-margin));
+}
+
+.prisma-modal__content_view_default {
+    --modal-margin: var(--spacing-8);
+
+    background-color: var(--color-background-default);
+    border-radius: var(--border-radius-12);
+}
+
+.prisma-modal__content_view_clear {
+    --modal-margin: 0px;
+}
+
+.prisma-modal__overlay {
+    --overlay-animation-transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-background-overlay);
+}
+
+.prisma-modal__overlay_animation_enter,
+.prisma-modal__overlay_animation_appear {
+    opacity: 0.1;
+}
+
+.prisma-modal__overlay_animation_enter .prisma-modal__content,
+.prisma-modal__overlay_animation_appear .prisma-modal__content {
+    transform: translateY(50px) scale(0.98);
+    opacity: 0;
+}
+
+.prisma-modal__overlay_animation_enter-active,
+.prisma-modal__overlay_animation_enter-done,
+.prisma-modal__overlay_animation_appear-active,
+.prisma-modal__overlay_animation_appear-done {
+    opacity: 1;
+    transition: var(--overlay-animation-transition);
+}
+
+.prisma-modal__overlay_animation_enter-active .prisma-modal__content,
+.prisma-modal__overlay_animation_enter-done .prisma-modal__content,
+.prisma-modal__overlay_animation_appear-active .prisma-modal__content,
+.prisma-modal__overlay_animation_appear-done .prisma-modal__content {
+    transition: var(--overlay-animation-transition);
+
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+}
+
+.prisma-modal__overlay_animation_exit {
+    opacity: 1;
+}
+
+.prisma-modal__overlay_animation_exit .prisma-modal__content {
+    opacity: 1;
+}
+
+.prisma-modal__overlay_animation_exit-active {
+    opacity: 0.1;
+    transition: var(--overlay-animation-transition);
+}
+
+.prisma-modal__overlay_animation_exit-active .prisma-modal__content {
+    transition: var(--overlay-animation-transition);
+
+    transform: translateY(50px) scale(0.98);
+    opacity: 0;
+}
+
+.referral-modal-v2__wrapper.referral-modal-v2__wrapper {
+    --modal-height: 35rem;
+    --padding-modal: 2rem;
+    color: var(--color-content-primary);
+    overflow: hidden;
+    padding: 2rem;
+    padding: var(--padding-modal);
+}
+
+    @media (max-width: 767px) {.referral-modal-v2__wrapper.referral-modal-v2__wrapper {
+        --padding-modal: 1rem
+}
+    }
+
+.referral-modal-v2__wrapper:has(.referral-modal-v2__rules) {
+    --modal-height: 42.5rem;
+}
+
+.referral-modal-v2__wrapper:not([class*='fullscreen']) {
+    width: 30rem;
+    height: var(--modal-height);
+    padding: var(--padding-modal);
+}
+
+@media (max-height: 599px) {
+
+.referral-modal-v2__wrapper:not([class*='fullscreen']) {
+        height: 90vh
+}
+    }
+
+.referral-modal-v2__bottom-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+
+    margin-block-start: auto;
+}
+
+.referral-modal-v2__rules {
+    font: var(--font-ys-caption-12-regular);
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: var(--color-content-secondary);
+}
+
+.referral-modal-v2__rules a {
+    color: var(--color-content-secondary);
+
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--color-background-glassy-b);
+    text-decoration-thickness: 1px;
+
+    text-underline-offset: 0.25em;
+
+    transition: text-decoration-color 0.2s;
+}
+
+.referral-modal-v2__rules a:hover {
+    color: var(--color-content-primary);
+    text-decoration-color: var(--color-content-primary);
+}
+
+.referral-modal-v2__link {
+    font: inherit;
+}
+
+.referral-modal-v2__button {
+    width: 100%;
+    margin-top: auto;
+}
+
+.referral-modal-v2__button .prisma-button__label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+
+.referral-modal-v2__content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    overflow: auto;
+}
+
+.referral-modal-v2__image {
+    --button-height: 3.125rem;
+
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: calc(2 * var(--padding-modal) + 3.125rem);
+    bottom: calc(2 * var(--padding-modal) + var(--button-height));
+
+    width: 20rem;
+}
+
+    @media (max-width: 359px), (max-height: 580px) {.referral-modal-v2__image {
+        display: none
+}
+    }
+
+@media (max-width: 359px), (max-height: 480px) {
+
+.referral-modal-v2__image.referral-modal-v2__image_compact.referral-modal-v2__image_with-rules {
+        display: none
+}
+    }
+
+.referral-modal-v2__image_with-rules {
+    /* Добавляем отступ от правил */
+    bottom: calc(2 * var(--padding-modal) + var(--button-height) + var(--rules-height));
+}
+
+    @media (max-width: 359px), (max-height: 660px) {.referral-modal-v2__image_with-rules {
+        display: none
+}
+    }
+
+.referral-modal-v2__image_compact {
+    display: block;
+}
+
+    @media (max-width: 359px), (max-height: 430px) {.referral-modal-v2__image_compact {
+        display: none
+}
+    }
+
+.referral-modal-v2__text {
+    margin: 0;
+
+    font: var(--font-ys-body-16-regular-ui);
+
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.referral-modal-v2__text ol {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+    padding-inline-start: 1.5em;
+}
+
+.referral-modal-v2__title {
+    margin: 0 var(--spacing-20) 0 0;
+
+    font: var(--font-ys-header-28-medium);
+
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+    @media (max-width: 1023px) {.referral-modal-v2__title {
+        font: var(--font-ys-header-24-medium);
+        font-feature-settings: 'pnum' on, 'lnum' on
+}
+    }
+
+.prisma-button2.referral-modal-v2__close {
+    position: absolute;
+    top: var(--spacing-8);
+    right: var(--spacing-8);
+}
+
+
+/*# sourceMappingURL=https://s3.mds.yandex.net/wirth-sourcemaps/v2.1347/build/referral-modal-v2.build.css.map*/
